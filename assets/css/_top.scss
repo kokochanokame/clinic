@@ -1,0 +1,125 @@
+.top {
+  padding-top: vw(375, 20);
+  
+  &__visual {
+	position: relative;
+  }
+  
+  &__text {
+	position: absolute;
+	width: vw(375, 265);
+	height: vw(375, 74);
+	left: vw(375, 20);
+	bottom: vw(375, 16.9);
+	z-index: 100;
+  }
+  
+  &__news-wrapper {
+	margin-top: vw(375, 40);
+	  display: flex;
+flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+
+   
+	  
+	@include mq(pc) {
+	  flex-wrap: nowrap;
+	  align-items: center;
+	  justify-content: space-evenly;
+	  flex-direction: row-reverse;
+	}
+  }
+  
+  &__card {
+    margin: 0 auto;
+	z-index: 250;
+    width: vw(375, 355);
+    height: vw(375, 116.6);
+   
+	img {
+      width: 100%;
+      height: 100%;
+	  object-fit: contain;
+      box-shadow: 1px 5px 13px 1px rgba(0, 0, 0, 0.6);
+      border-radius: 30px;
+     
+	}
+  }
+  
+  &__news-box {
+	width: vw(375, 335);
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid $black;
+	
+  }
+  
+  &__news-title {
+	font-size: vw(375, 20);
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 2;
+	letter-spacing: 1.6px;
+	text-align: center;
+	color: #393939;
+  }
+  
+  &__news-sub {
+	margin-left: vw(375, 16);
+	font-size: vw(375, 11);
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 3.27;
+	letter-spacing: 1.1px;
+	text-align: center;
+	color: #1391e6;
+  }
+  
+  &__news-text {
+	font-size: vw(375, 11);
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 3.27;
+	letter-spacing: normal;
+	text-align: left;
+	color: #888;
+	text-decoration: underline;
+  }
+  
+  &__news-arrow {
+	display: inline-block;
+	margin-left: vw(375, 16);
+	width: vw(375, 14);
+	height: vw(375, 14);
+  }
+  
+  &__news-date {
+	font-size: vw(375, 12);
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 3;
+	letter-spacing: normal;
+	text-align: left;
+	color: #393939;
+  }
+  
+  &__news-texy2 {
+	font-size: vw(375, 14);
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.43;
+	letter-spacing: normal;
+	text-align: left;
+	color: #393939;
+  }
+}
+
